@@ -1,3 +1,6 @@
+<?php
+	require_once('phpFunctions/connect.php');
+?>
 <!DOCTYPE HTML>
 
 <html>
@@ -125,21 +128,32 @@
 				</div>
 			</div>
 			<div class="row">
-
+				<?php
+					$query = "SELECT NameProd, LinkImg, Description, Price FROM products ";
+					$result = mysqli_query($conn, $query) or die(mysqli_error($conn));
+					if($result) {
+						$rows = mysqli_num_rows($result); // количество полученных строк
+						for ($i = 0 ; $i < $rows ; ++$i) {
+						$row = mysqli_fetch_row($result);
+				?>
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<a href="images/img_1.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_1.jpg" alt="Image" class="img-responsive">
+							<img src="<?php echo $row[1] ?>" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Geraskuter 1</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="price cursive-font">$19.15</span></p>
+							<h2><?php echo $row[0] ?></h2>
+							<p><?php echo $row[2] ?></p>
+							<p><span class="price cursive-font"><?php echo $row[3] ?></span></p>
 						</div>
 					</a>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6">
+				<?php
+						}
+					}
+				?>
+			<!--	<div class="col-lg-4 col-md-4 col-sm-6">
 					<a href="images/img_2.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
@@ -209,6 +223,7 @@
 						</div>
 					</a>
 				</div>
+				-->
 
 			</div>
 		</div>
