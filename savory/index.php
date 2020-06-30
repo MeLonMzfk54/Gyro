@@ -183,8 +183,6 @@
 				-->
 
 
-				
-	
 	<div id="gtco-features">
 		<div class="gtco-container">
 			<div class="row">
