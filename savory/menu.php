@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 
-	
 <html>
 	<head>
 	<meta charset="utf-8">
@@ -40,6 +39,8 @@
 	<!-- Bootstrap DateTimePicker -->
 	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
 
+
+
 	<!-- Owl Carousel  -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -68,18 +69,20 @@
 			
 			<div class="row">
 				<div class="col-sm-4 col-xs-12">
-					<div id="gtco-logo"><a href="index.html">Geros-city <em>.</em></a></div>
+					<div id="gtco-logo"><a href="index.php">Geros-city <em>.</em></a></div>
 				</div>
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
-						<li><a href="menu.html">Model range</a></li>
+						<li class="active"><a href="menu.php">Model range</a></li>
 						<li class="has-dropdown">
 							<a href="services.html">Services</a>
+<!--
 							<ul class="dropdown">
 								<li><a href="#">Food Catering</a></li>
 								<li><a href="#">Wedding Celebration</a></li>
 								<li><a href="#">Birthday's Celebration</a></li>
 							</ul>
+-->
 						</li>
 						<li><a href="contact.html">Contact</a></li>
 						<li class="btn-cta"><a href="#"><span>Reservation</span></a></li>
@@ -90,66 +93,19 @@
 		</div>
 	</nav>
 	
-	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(images/img_bg_1.jpg)" data-stellar-background-ratio="0.5">
+	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(images/img_bg_1.jpg)" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-left">
+				<div class="col-md-12 col-md-offset-0 text-center">
 					
 
 					<div class="row row-mt-15em">
-						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
+						<div class="col-md-12 mt-text animate-box" data-animate-effect="fadeInUp">
 							
-							<h1 class="cursive-font">Always on big wheels !</h1>	
+							<h1 class="cursive-font">See all our models!</h1>	
 						</div>
-						<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
-							<div class="form-wrap">
-								<div class="tab">
-									
-									<div class="tab-content">
-										<div class="tab-content-inner active" data-content="signup">
-											<h3 class="cursive-font">Order Registration</h3>
-											<form action="#">
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="activities">Model</label>
-														<select name="#" id="activities" class="form-control">
-															<option value="">Model</option>
-															<option value="">1</option>
-															<option value="">2</option>
-															<option value="">3</option>
-															<option value="">4</option>
-															<option value="">5</option>
-															<option value="">6</option>
-														</select>
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="date-start">Date</label>
-														<input type="text" id="date" class="form-control">
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="date-start">Time</label>
-														<input type="text" id="time" class="form-control">
-													</div>
-												</div>
-
-												<div class="row form-group">
-													<div class="col-md-12">
-														<input type="submit" class="btn btn-primary btn-block" value="Reserve Now">
-													</div>
-												</div>
-											</form>	
-										</div>
-
-										
-									</div>
-								</div>
-							</div>
-						</div>
+						
 					</div>
 							
 					
@@ -164,7 +120,7 @@
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2 class="cursive-font primary-color">Popular Models</h2>
+					<h2 class="cursive-font primary-color">Popular models</h2>
 					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 				</div>
 			</div>
@@ -178,8 +134,8 @@
 						</figure>
 						<div class="fh5co-text">
 							<h2>Geraskuter 1</h2>
-							<p>Stylish pink gyro scooter with the ability to play music</p>
-							<p><span class="price cursive-font">$190.15</span></p>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p><span class="price cursive-font">$19.15</span></p>
 						</div>
 					</a>
 				</div>
@@ -191,8 +147,8 @@
 						</figure>
 						<div class="fh5co-text">
 							<h2>Geraskuter 2</h2>
-							<p>Brutal camouflage gyrometer with shock absorption wheels</p>
-							<p><span class="price cursive-font">$199.99</span></p>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p><span class="price cursive-font">$20.99</span></p>
 						</div>
 					</a>
 				</div>
@@ -204,58 +160,59 @@
 						</figure>
 						<div class="fh5co-text">
 							<h2>Geraskuter 3</h2>
-							<p>Mysterious black gyro scooter with illuminated power button</p>
-							<p><span class="price cursive-font">$119.99</span></p>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p><span class="price cursive-font">$8.99</span></p>
 
 						</div>
 					</a>
 				</div>
 
 
-				
-	
-	<div id="gtco-features">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
-					<h2 class="cursive-font">Our Services</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="images/img_4.jpg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="images/img_4.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>Geraskuter 4</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p><span class="price cursive-font">$12.99</span></p>
+						</div>
+					</a>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-6">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="ti-face-smile"></i>
-						</span>
-						<h3>Happy People</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-					</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="images/img_5.jpg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="images/img_5.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>Geraskuter 5</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p><span class="price cursive-font">$23.10</span></p>
+						</div>
+					</a>
 				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="ti-thought"></i>
-						</span>
-						<h3>Creative Culinary</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-					</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="images/img_6.jpg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="images/img_6.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>Geraskuter 6</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<p><span class="price cursive-font">$5.59</span></p>
+						</div>
+					</a>
 				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="ti-truck"></i>
-						</span>
-						<h3>Food Delivery</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-					</div>
-				</div>
-				
 
 			</div>
 		</div>
 	</div>
-
 
 	<div class="gtco-cover gtco-cover-sm" style="background-image: url(images/img_bg_1.jpg)"  data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
@@ -270,6 +227,21 @@
 	</div>
 
 	
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<form class="form-inline">
+						<div class="col-md-6 col-sm-6">
+							
+						
+					</form>
+				</div>
+			</div>
+		</div>
+			<footer id="gtco-footer" role="contentinfo" style="background-image: url(images/img_bg_1.jpg)" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row row-pb-md">
+
 				
 
 				
@@ -293,13 +265,17 @@
 					</div>
 				</div>
 
+				
+					
+				
+				</div>
+
+			</div>
+
 			
-
-		</div>
-	</footer>
-	<!-- </div> -->
-
+</footer>
 	</div>
+   
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
