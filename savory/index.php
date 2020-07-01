@@ -129,9 +129,6 @@
 						$rows = mysqli_num_rows($result); // количество полученных строк
 						for ($i = 0 ; $i < $rows ; ++$i) {
 						$row = mysqli_fetch_row($result);
-						if ($row[4] == "0") {
-							break;
-						}
 				?>
 				<div class="col-lg-4 col-md-4 col-sm-6 products">
 					<a href="<?php echo $row[1] ?>" class="fh5co-card-item image-popup">

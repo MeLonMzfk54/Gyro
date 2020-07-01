@@ -1767,6 +1767,7 @@ form label {
   transition: 0.3s;
 }
 .fh5co-card-item .fh5co-text {
+  height: 200px;
   padding: 0px 10px 10px 20px;
   text-align: center;
   position: relative;
@@ -1964,6 +1965,7 @@ form label {
         margin: 0 auto;
     } 
 }
+
 
 /*POPUP*/
 .popup{
