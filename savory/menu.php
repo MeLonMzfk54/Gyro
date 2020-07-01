@@ -77,7 +77,7 @@
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
 						<li class="active"><a href="menu.php">Model range</a></li>
-						<li class="has-dropdown">
+						<li>
 							<a href="services.html">Services</a>
 <!--
 							<ul class="dropdown">
@@ -137,7 +137,7 @@
 						$row = mysqli_fetch_row($result);
 				?>
 				<div class="col-lg-4 col-md-4 col-sm-6 products">
-					<a href="images/img_1.jpg" class="fh5co-card-item image-popup">
+					<a href="<?php echo $row[1] ?>" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
 							<img src="<?php echo $row[1] ?>" alt="Image" class="img-responsive">
@@ -177,9 +177,11 @@
 						<div class="col-md-6 col-sm-6">
 							
 						
-					</form>
+					
 				</div>
+				</form>
 			</div>
+        </div>
 		</div>
 			<footer id="gtco-footer" role="contentinfo" style="background-image: url(images/img_bg_1.jpg)" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
@@ -218,12 +220,36 @@
 
 			
 </footer>
-	</div>
+<!--	</div>-->
    
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
+	<!--  POPUP	-->
+	<div class="popup">
+	    <div class="popup__inner">
+	        <div class="popup__title">Сделать заказ</div>
+	        <form action="#" id="popupForm" class="popup__form">
+<!--
+            <select name="category" id="popupCategory" class="popup__category">
+                <option value="Все" class="popup__option">Все</option>
+                <option value="Велосипед" class="popup__option">Велосипеды</option>
+                <option value="Самокат" class="popup__option">Самокаты</option>
+                <option value="Гироскутер" class="popup__option">Гироскутеры</option>
+            </select>
+-->
+	            <div class="popup__product">
+	                <input type="text" class="popup__call" name="call" placeholder="Введите название товара">
+	                <input type="text" class="popup__count" name="count" placeholder="Введите количество товара">
+	            </div>
+	            <input type="text" class="popup__name" name="name" placeholder="Ваше имя">
+	            <input type="text" class="popup__tel" name="tel" placeholder = "Ваш номер телефона">
+	            <input type="submit" class="popup__submit" name="submit" value="Заказать">
+	        </form>
+	    </div>
+	</div>
+	<div class="popup__bg"></div>
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -251,6 +277,8 @@
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<!--  POPUP	-->
+    <script src="js/popup.js"></script>
 
 	</body>
 </html>

@@ -74,7 +74,7 @@
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
 						<li><a href="menu.php">Model range</a></li>
-						<li class="has-dropdown active">
+						<li class="active">
 							<a href="services.html">Services</a>
 							
 						</li>
@@ -211,6 +211,30 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
+	<!--  POPUP	-->
+	<div class="popup">
+	    <div class="popup__inner">
+	        <div class="popup__title">Сделать заказ</div>
+	        <form action="#" id="popupForm" class="popup__form">
+<!--
+            <select name="category" id="popupCategory" class="popup__category">
+                <option value="Все" class="popup__option">Все</option>
+                <option value="Велосипед" class="popup__option">Велосипеды</option>
+                <option value="Самокат" class="popup__option">Самокаты</option>
+                <option value="Гироскутер" class="popup__option">Гироскутеры</option>
+            </select>
+-->
+	            <div class="popup__product">
+	                <input type="text" class="popup__call" name="call" placeholder="Введите название товара">
+	                <input type="text" class="popup__count" name="count" placeholder="Введите количество товара">
+	            </div>
+	            <input type="text" class="popup__name" name="name" placeholder="Ваше имя">
+	            <input type="text" class="popup__tel" name="tel" placeholder = "Ваш номер телефона">
+	            <input type="submit" class="popup__submit" name="submit" value="Заказать">
+	        </form>
+	    </div>
+	</div>
+	<div class="popup__bg"></div>
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -238,6 +262,8 @@
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<!--  POPUP	-->
+    <script src="js/popup.js"></script>
 
 	</body>
 </html>
