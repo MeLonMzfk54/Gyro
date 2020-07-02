@@ -128,8 +128,65 @@
 				</div>
 			</div>
 			<div class="row">
+				<h3 class = "cursive-font primary-color">Самокаты</h3>
 				<?php
-					$query = "SELECT NameProd, LinkImg, Description, Price FROM products ";
+					$query = "SELECT NameProd, LinkImg, Description, Price FROM products WHERE Category = 'Самокат' ";
+					$result = mysqli_query($conn, $query) or die(mysqli_error($conn));
+					if($result) {
+						$rows = mysqli_num_rows($result); // количество полученных строк
+						for ($i = 0 ; $i < $rows ; ++$i) {
+						$row = mysqli_fetch_row($result);
+				?>
+				<div class="col-lg-4 col-md-4 col-sm-6 products">
+					<a href="<?php echo $row[1] ?>" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="<?php echo $row[1] ?>" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2><?php echo $row[0] ?></h2>
+							<p><?php echo $row[2] ?></p>
+							<p><span class="price cursive-font"><?php echo $row[3] ?></span></p>
+						</div>
+					</a>
+				</div>
+				<?php
+						}
+					}
+				?>
+			</div>
+			<div class="row">
+				<h3 class = "cursive-font primary-color">Велосипеды</h3>
+				<?php
+					$query = "SELECT NameProd, LinkImg, Description, Price FROM products WHERE Category = 'Велосипед' ";
+					$result = mysqli_query($conn, $query) or die(mysqli_error($conn));
+					if($result) {
+						$rows = mysqli_num_rows($result); // количество полученных строк
+						for ($i = 0 ; $i < $rows ; ++$i) {
+						$row = mysqli_fetch_row($result);
+				?>
+				<div class="col-lg-4 col-md-4 col-sm-6 products">
+					<a href="<?php echo $row[1] ?>" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="<?php echo $row[1] ?>" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2><?php echo $row[0] ?></h2>
+							<p><?php echo $row[2] ?></p>
+							<p><span class="price cursive-font"><?php echo $row[3] ?></span></p>
+						</div>
+					</a>
+				</div>
+				<?php
+						}
+					}
+				?>
+			</div>
+			<div class="row">
+				<h3 class = "cursive-font primary-color">Гироскутеры</h3>
+				<?php
+					$query = "SELECT NameProd, LinkImg, Description, Price FROM products WHERE Category = 'Гироскутер' ";
 					$result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 					if($result) {
 						$rows = mysqli_num_rows($result); // количество полученных строк
