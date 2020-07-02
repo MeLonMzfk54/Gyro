@@ -79,16 +79,8 @@
 						<li class="active"><a href="menu.php">Model range</a></li>
 						<li>
 							<a href="services.html">Services</a>
-<!--
-							<ul class="dropdown">
-								<li><a href="#">Food Catering</a></li>
-								<li><a href="#">Wedding Celebration</a></li>
-								<li><a href="#">Birthday's Celebration</a></li>
-							</ul>
--->
 						</li>
 						<li><a href="contact.html">Contact</a></li>
-						<li class="btn-cta"><a href="#"><span>Reservation</span></a></li>
 					</ul>	
 				</div>
 			</div>
@@ -138,17 +130,19 @@
 						$row = mysqli_fetch_row($result);
 				?>
 				<div class="col-lg-4 col-md-4 col-sm-6 products">
-					<a href="<?php echo $row[1] ?>" class="fh5co-card-item image-popup">
+					<div class="fh5co-card-item">
+					<a href="<?php echo $row[1] ?>" class=" image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
 							<img src="<?php echo $row[1] ?>" alt="Image" class="img-responsive">
 						</figure>
+                        </a>
 						<div class="fh5co-text">
 							<h2><?php echo $row[0] ?></h2>
 							<p><?php echo $row[2] ?></p>
-							<p><span class="price cursive-font"><?php echo $row[3] ?></span></p>
+							<p><span class="price cursive-font"><?php echo $row[3] ?></span><i class="icon-shopping-basket basket-icon"></i></p>
 						</div>
-					</a>
+					</div>
 				</div>
 				<?php
 						}
@@ -288,16 +282,8 @@
 	    <div class="popup__inner">
 	        <div class="popup__title">Сделать заказ</div>
 	        <form action="#" id="popupForm" class="popup__form">
-<!--
-            <select name="category" id="popupCategory" class="popup__category">
-                <option value="Все" class="popup__option">Все</option>
-                <option value="Велосипед" class="popup__option">Велосипеды</option>
-                <option value="Самокат" class="popup__option">Самокаты</option>
-                <option value="Гироскутер" class="popup__option">Гироскутеры</option>
-            </select>
--->
 	            <div class="popup__product">
-	                <input type="text" class="popup__call" name="call" placeholder="Введите название товара">
+	                <input type="text" class="popup__call" name="call" placeholder="Введите название товара" disabled>
 	                <input type="text" class="popup__count" name="count" placeholder="Введите количество товара">
 	            </div>
 	            <input type="text" class="popup__name" name="name" placeholder="Ваше имя">
@@ -331,7 +317,7 @@
 	<script src="js/moment.min.js"></script>
 	<script src="js/bootstrap-datetimepicker.min.js"></script>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<!--  POPUP	-->

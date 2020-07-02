@@ -1976,13 +1976,14 @@ form label {
 /*POPUP*/
 .popup{
   max-width: 220px;
-  height: 300px;
+  height: 350px;
     border-radius: 10px;
     position: fixed;
     z-index: 3000;
     top: 30%;
     left: 45%;
     bottom: 0;
+/*    background: #000;*/
     transform: scale(0);
     transition: .5s all ease;
 /*    background: #1E1B19;*/
@@ -2005,6 +2006,7 @@ form label {
 .popup__inner{
     display: flex;
     flex-direction: column;
+    
 }
 .popup__title{
     font-size: 20px;
@@ -2033,6 +2035,10 @@ form label {
     display: block;
     margin-left: 55px;
     color: white;
+    transition: .4s all ease;
+}
+.popup input[type=submit]:hover{
+    background-color: #FB9024;
 }
 @media(max-width:995px){
     .popup{
@@ -2081,6 +2087,37 @@ form label {
     top: 30%;
     left: 23%;
 }
+}
+
+.desc{
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+.desc::-webkit-scrollbar{
+  width: 5px;
+}
+
+.desc::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.desc::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #FBB448;
+}
+
+.basket-icon{
+/*    color: #FBB448;*/
+    transition: .4s all ease;
+    padding-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.basket-icon:hover{
+    color: #FBB448;
 }
 
 

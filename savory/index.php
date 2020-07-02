@@ -71,16 +71,8 @@
 						<li><a href="menu.php">Model range</a></li>
 						<li>
 							<a href="services.html">Services</a>
-<!--
-							<ul class="dropdown">
-								<li><a href="#">Food Catering</a></li>
-								<li><a href="#">Wedding Celebration</a></li>
-								<li><a href="#">Birthday's Celebration</a></li>
-							</ul>
--->
 						</li>
 						<li><a href="contact.html">Contact</a></li>
-						<li class="btn-cta popupOpen"><a href="#"><span>Reservation</span></a></li>
 					</ul>	
 				</div>
 			</div>
@@ -131,17 +123,22 @@
 						$row = mysqli_fetch_row($result);
 				?>
 				<div class="col-lg-4 col-md-4 col-sm-6 products">
-					<a href="<?php echo $row[1] ?>" class="fh5co-card-item image-popup">
+				  
+					<div class="fh5co-card-item">
+					<a href="<?php echo $row[1] ?>" class=" image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
 							<img src="<?php echo $row[1] ?>" alt="Image" class="img-responsive">
 						</figure>
+                        </a>
 						<div class="fh5co-text">
 							<h2><?php echo $row[0] ?></h2>
+							<div class="desc">
 							<p><?php echo $row[2] ?></p>
-							<p><span class="price cursive-font"><?php echo $row[3] ?></span></p>
+							</div>
+							<p><span class="price cursive-font"><?php echo $row[3] ?></span><i class="icon-shopping-basket basket-icon"></i></p>
 						</div>
-					</a>
+					</div>
 				</div>
 				<?php
 					if($i == 2) {
@@ -261,7 +258,7 @@
             </select>
 -->
 	            <div class="popup__product">
-	                <input type="text" class="popup__call" name="call" placeholder="Введите название товара">
+	                <input type="text" class="popup__call" name="call" placeholder="Введите название товара" disabled>
 	                <input type="text" class="popup__count" name="count" placeholder="Введите количество товара">
 	            </div>
 	            <input type="text" class="popup__name" name="name" placeholder="Ваше имя">
