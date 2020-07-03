@@ -4,17 +4,16 @@
     $tel = $_POST["tel"];
     $count = $_POST["count"];
     $title = $_POST["title"];
-//    $sql = "INSERT INTO orders (title,count,name,tel) VALUES('$title','$count','$name','$tel')";
-//    mysqli_query($conn,$sql);
+    $sql = "INSERT INTO orders (title,count,name,tel) VALUES('$title','$count','$name','$tel')";
+    mysqli_query($conn,$sql);
     $sql = "SELECT * FROM products where NameProd = '$title'";
     $result = mysqli_query($conn,$sql);
     $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
     foreach($products as $prod){
         $popular = $prod['Popular'];
-        echo $popular;
         $popular++;
-//        $sql = "UPDATE products SET Popular = $popular where NameProd = '$title'";
-//        mysqli_query($conn,$sql);
+        $sql = "UPDATE products SET Popular = $popular where NameProd = '$title'";
+        mysqli_query($conn,$sql);
          }
 //        require_once("phpmailer/PHPMailerAutoload.php");
 //        $mail = new PHPmailer;
@@ -36,7 +35,7 @@
 //        $mail->Subject = 'Тестовая заявка';
 //        $mail->Body = ''.$name.' Оставил заявку, его телефон '.$phone;
 //        $mail->AltBody = '';
-    mail("garifullin.tosha@mail.ru","Тема письма","Проверка отправки почты через опенсервер");
+    mail("garifullin.tosha@mail.ru","Новый заказ","От $name : $tel");
 
 
 ?>

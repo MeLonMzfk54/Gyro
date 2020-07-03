@@ -42,6 +42,9 @@
 
 	<!-- Bootstrap DateTimePicker -->
 	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+	
+<!--	fontawesome-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
 
 
@@ -246,18 +249,17 @@
 					<div class="gtco-widget">
 						<h3 class="rus">Контактная информация</h3>
 						<ul class="gtco-quick-contact">
-							<li><a href="#"><i class="icon-phone"></i> +7 953 880 90 70</a></li>
-							<li><a href="#"><i class="icon-mail2"></i> info@GetTemplates.co</a></li>
+						<li class="address">Улица Золотодолинская 2, корпус 1</li>
+							<li><a href="#"><i class="icon-phone"></i>+7 (952) 913-25-82</a></li>
+							<li><a href="#"><i class="icon-mail2"></i> sashakotkin@mail.com</a></li>
 						</ul>
 					</div>
 					<div class="gtco-widget">
 						<h3 class="rus">Социальные сети</h3>
-						<ul class="gtco-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
+					    <ul class="gtco-social-icons">
+							<li><a href="https://instagram.com/academ_bike?igshid=1wd1v9ew1rwrt" target="_blank"><i class="icon-instagram"></i></a></li>
+							<li><a href="https://vk.com/academbike" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+			            </ul>
 					</div>
 				</div>
 
