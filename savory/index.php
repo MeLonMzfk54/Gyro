@@ -65,7 +65,7 @@
 			
 			<div class="row">
 				<div class="col-sm-4 col-xs-12">
-					<div id="gtco-logo"><a href="index.php">Geros-city <em>.</em></a></div>
+					<div id="gtco-logo"><a href="#">Geros-city <em>.</em></a></div>
 				</div>
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
@@ -73,7 +73,7 @@
 						<li>
 							<a class = "rus" href="services.html">Услуги</a>
 						</li>
-						<li><a class = "rus" href="contact.html">Контакты</a></li>
+						<li><a href="#gtco-footer" class = "rus scrollDown" href="contact.html">Контакты</a></li>
 					</ul>	
 				</div>
 			</div>
@@ -236,14 +236,11 @@
 	    <div class="popup__inner">
 	        <div class="popup__title">Сделать заказ</div>
 	        <form id="popupForm" class="popup__form">
-<!--
-            <select name="category" id="popupCategory" class="popup__category">
-                <option value="Все" class="popup__option">Все</option>
-                <option value="Велосипед" class="popup__option">Велосипеды</option>
-                <option value="Самокат" class="popup__option">Самокаты</option>
-                <option value="Гироскутер" class="popup__option">Гироскутеры</option>
-            </select>
--->
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="GEROS-CITY.">
+		<input type="hidden" name="admin_email" value="fortniteyt2001@mail.ru">
+		<input type="hidden" name="form_subject" value="Новая заявка">
+		<!-- END Hidden Required Fields -->
 	            <div class="popup__product">
 	                <input type="text" class="popup__call" name="call" placeholder="Введите название товара" disabled>
 	                <input type="text" class="popup__count" name="count" placeholder="Введите количество товара">
@@ -284,7 +281,8 @@
 	<script src="js/main.js"></script>
 <!--  POPUP	-->
     <script src="js/popup.js"></script>
-
+<!--  SCROLL  -->
+    <script src="js/scroll.js"></script>
 	</body>
 </html>
 

@@ -62,17 +62,33 @@ $(document).ready(function(){
         type: "POST",
         url: "phpFunctions/order.php",
         data: {count: count, title: title, name: name,tel: tel}
-    }).done(function(){
+    }).done(function(res){
+              alert(res);
          alert("Ваш заказ поступил в обработку, ожидайте");
-         $(".popup__tel").css("border","2px solid #FB9024");
-         $(".popup__name").css("border","2px solid #FB9024");
-         $(".popup__count").css("border","2px solid #FB9024");
-         $(".popup__call").css("border","2px solid #FB9024");
+//         $(".popup__tel").css("border","2px solid #FB9024");
+//         $(".popup__name").css("border","2px solid #FB9024");
+//         $(".popup__count").css("border","2px solid #FB9024");
+//         $(".popup__call").css("border","2px solid #FB9024");
+          $(".popup__bg").fadeOut(); 
+       $(".popup").removeClass("popup__active");       
          $("#popupForm")[0].reset();
     }).fail(function(){
        alert("Заказ не совершен"); 
     });
+//         	var th = $(this);
+//		$.ajax({
+//			type: "POST",
+//			url: "phpFunctions/mail.php", 
+//			data: th.serialize()
+//		}).done(function() {
+//			setTimeout(function() {
+//				// Done Functions
+//				th.trigger("reset");
+//			}, 1000);
+//		});
+//		return false;   
         }
-    });   
+    });
+    
         
 });

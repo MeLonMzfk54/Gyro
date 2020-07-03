@@ -77,11 +77,11 @@
 				</div>
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
-						<li class="active"><a class="rus" href="menu.php">Модельный ряд</a></li>
+						<li class="active"><a class="rus" href="#">Модельный ряд</a></li>
 						<li>
 							<a class="rus" href="services.html">Услуги</a>
 						</li>
-						<li><a class="rus" href="contact.html">Контакты</a></li>
+						<li><a href="#gtco-footer" class="rus scrollDown" href="contact.html">Контакты</a></li>
 					</ul>	
 				</div>
 			</div>
@@ -281,6 +281,11 @@
 	    <div class="popup__inner">
 	        <div class="popup__title">Сделать заказ</div>
 	        <form action="#" id="popupForm" class="popup__form">
+            		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="GEROS-CITY.">
+		<input type="hidden" name="admin_email" value="fortniteyt2001@mail.ru">
+		<input type="hidden" name="form_subject" value="Новая заявка">
+		<!-- END Hidden Required Fields -->
 	            <div class="popup__product">
 	                <input type="text" class="popup__call" name="call" placeholder="Введите название товара" disabled>
 	                <input type="text" class="popup__count" name="count" placeholder="Введите количество товара">
@@ -321,6 +326,8 @@
 	<script src="js/main.js"></script>
 	<!--  POPUP	-->
     <script src="js/popup.js"></script>
+    <!--  SCROLL  -->
+    <script src="js/scroll.js"></script>
 
 	</body>
 </html>
