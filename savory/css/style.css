@@ -5,6 +5,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
 /* =======================================================
 *
 * 	Template Style 
@@ -1972,7 +1974,9 @@ form label {
   margin-bottom: 30px;
 }
 
-
+.rus {
+  font-family: 'Rubik', sans-serif;
+}
 /*POPUP*/
 .popup{
   max-width: 220px;
