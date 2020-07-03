@@ -8,7 +8,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Savory &mdash; Free Website Template, Free HTML5 Template by GetTemplates.co</title>
+	<title>GEROS-CITY</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by GetTemplates.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -27,6 +27,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -68,11 +69,11 @@
 				</div>
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
-						<li><a href="menu.php">Model range</a></li>
+						<li><a class = "rus" href="menu.php">Модельный ряд</a></li>
 						<li>
-							<a href="services.html">Services</a>
+							<a class = "rus" href="services.html">Услуги</a>
 						</li>
-						<li><a href="#gtco-footer" class = "scrollDown">Contact</a></li>
+						<li><a href="#gtco-footer" class = "rus scrollDown" href="contact.html">Контакты</a></li>
 					</ul>	
 				</div>
 			</div>
@@ -109,8 +110,7 @@
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2 class="cursive-font primary-color">Popular Models</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h2 class="cursive-font primary-color rus">Популярные модели</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -151,40 +151,28 @@
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
-					<h2 class="cursive-font">Our Services</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h2 class="cursive-font rus">Наши Услуги</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 col-sm-6">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="ti-face-smile"></i>
-						</span>
-						<h3>Happy People</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="ti-thought"></i>
-						</span>
-						<h3>Creative Culinary</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-6 col-sm-6">
 					<div class="feature-center animate-box" data-animate-effect="fadeIn">
 						<span class="icon">
 							<i class="ti-truck"></i>
 						</span>
-						<h3>Food Delivery</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<h3 class = "rus">Доставка</h3>
+						<p class = "rus">Доставка в любой район города Новосибирска. Возможность выбора услуги обсуждайте с консультантом.</p>
 					</div>
 				</div>
-				
-
+				<div class="col-md-6 col-sm-6">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i class="ti-thought"></i>
+						</span>
+						<h3 class = "rus">Гидроизоляция</h3>
+						<p class = "rus">Гидроизоляция вашего транспорта. Возможность выбора услуги обсуждайте с консультантом.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -195,8 +183,8 @@
 		<div class="gtco-container text-center">
 			<div class="display-t">
 				<div class="display-tc">
-					<h1>&ldquo; Their high quality of service makes me back over and over again!&rdquo;</h1>
-					<p>&mdash; John Doe, CEO of XYZ Co.</p>
+					<h1 class = "rus">«Тот, кто изобрел велосипед, заслуживает благодарности человечества»</h1>
+					<p class = "rus">&mdash; Лорд Чарльз Бересфорд</p>
 				</div>	
 			</div>
 		</div>
@@ -217,15 +205,14 @@
 
 				<div class="col-md-12 text-center">
 					<div class="gtco-widget">
-						<h3>Get In Touch</h3>
+						<h3 class = "rus">Контактная информация</h3>
 						<ul class="gtco-quick-contact">
 							<li><a href="#"><i class="icon-phone"></i> +7 953 880 90 70</a></li>
 							<li><a href="#"><i class="icon-mail2"></i> info@GetTemplates.co</a></li>
-							<li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
 						</ul>
 					</div>
 					<div class="gtco-widget">
-						<h3>Get Social</h3>
+						<h3 class = "rus">Социальные сети</h3>
 						<ul class="gtco-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
